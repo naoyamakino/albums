@@ -3,7 +3,7 @@ import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 
-const AlbumDetail = (album) => {
+const AlbumDetail = ({ album }) => {
   const { title, artist, thumbnail_image } = album;
   return (
     <Card>
@@ -25,7 +25,7 @@ const AlbumDetail = (album) => {
 
 const styles = {
   headerContentStyle: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-around'
   },
 
